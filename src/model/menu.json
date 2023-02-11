@@ -1,0 +1,25 @@
+{
+  "entree": [
+    { "id": 1, "name": "salade" },
+    { "id": 2, "name": "tomate" },
+    { "id": 3, "name": "oignon" },
+    { "id": 4, "name": "pain" }
+  
+  ],
+  "plat": [
+    { "id": 2, "name": "truffe" },
+    { "id": 3, "name": "bourgignon" },
+    { "id": 4, "name": "poisson" }
+  ],
+  "dessert": [
+    { "id": 1, "name": "tiramisu" },
+    { "id": 2, "name": "pompom" },
+    { "id": 3, "name": "yaourt" }
+  ],
+  "boisson": [
+    { "id": 1, "name": "coca" },
+    { "id": 2, "name": "ice thea" },
+    { "id": 3, "name": "limonade" },
+    { "id": 4, "name": "pepsi" }
+  ]
+}

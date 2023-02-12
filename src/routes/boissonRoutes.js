@@ -2,13 +2,6 @@ const express = require("express");
 const router = express.Router();
 const boissonController = require("../controller/controllerBoisson");
 
-//C'est une route par défaut qui renvoie une chaîne de caractères
-// definiton de la route recupérer avec la methode get 
-// test la route 
-// ex: http://localhost:3000 
-//C'est une route par défaut qui renvoie une chaîne de caractères
-
-// router.get("/boison", boissonController.getAllData)
 //une route qui va permettre d'afficher les données contenu dans le fichier exemple.json en JSON dans la requête
 // GET "/boisson"
 //ex: http://localhost:3000/boisson
@@ -32,7 +25,5 @@ router.put("/boisson/:id" , boissonController.createData);
 //DELETE "/boisson/:id"
 //ex: http://localhost:3000/boisson/1
 router.delete("/boisson/:id" , boissonController.deleteDataById);
-
-
 
 module.exports=router;

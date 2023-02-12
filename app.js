@@ -17,13 +17,13 @@ const platRoute = require('./src/routes/platRoutes');
 
 const dessertRoute = require('./src/routes/dessertRoutes');
 
-// const boissonRoute = require('./src/routes/boissonRoutes')
+const boissonRoute = require('./src/routes/boissonRoutes')
 
 // Permet lancer la const qui contient le chemin route
 app.use(entreeRoute);
 app.use(platRoute);
 app.use(dessertRoute);
-// app.use(boissonRoute);
+app.use(boissonRoute);
 
 module.exports=app;
 

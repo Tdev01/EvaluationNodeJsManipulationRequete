@@ -17,17 +17,17 @@ router.get("/plat/:id" , platController.getDataById)
 // //une route qui me permet d'insérer de la donnée dans mes fichier exemple.json
 // //POST "/palt"
 // //ex: http://localhost:3000/plat
-// router.post("/plat" , entreeController.createData);
+router.post("/plat" , platController.createData);
 
 //une route qui me permet de mettre à jour une donnée en se basant sur son id
 //PUT: "/plat/:id"
 //ex: http://localhost:3000/plat
-// router.put("/plat/:id" , entreeController.createData);
+router.put("/plat/:id" , platController.createData);
 
 //une route qui me permet de supprimer une donnée en se basant sur son id
 //DELETE "/plat/:id"
 //ex: http://localhost:3000/plat
-// router.delete("/plat/:id" , entreeController.deleteDataById);
+router.delete("/plat/:id" , platController.deleteDataById);
 
 
 

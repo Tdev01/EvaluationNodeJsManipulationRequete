@@ -9,12 +9,21 @@ const bodyParser = require('body-parser');
 // pour faire l'appli express nous devont utiliser body-parser
 app.use(bodyParser.json());
 
+
+// le chemin qui mène au fichier route .js 
 const entreeRoute = require('./src/routes/entreeRoutes');
 
 const platRoute = require('./src/routes/platRoutes');
 
-app.use(platRoute);
+const dessertRoute = require('./src/routes/dessertRoutes');
+
+// const boissonRoute = require('./src/routes/boissonRoutes')
+
+// Permet lancer la const qui contient le chemin route
 app.use(entreeRoute);
+app.use(platRoute);
+app.use(dessertRoute);
+// app.use(boissonRoute);
 
 module.exports=app;
 

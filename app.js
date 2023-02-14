@@ -9,6 +9,9 @@ const bodyParser = require('body-parser');
 // pour faire l'appli express nous devont utiliser body-parser
 app.use(bodyParser.json());
 
+const cors = require("cors");
+app.use(cors());
+
 
 // le chemin qui mène au fichier route .js 
 const entreeRoute = require('./src/routes/entreeRoutes');
